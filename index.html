@@ -5,23 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Qri-Sound | Live Music Hub</title>
   <style>
-    /* 2번: 미니멀 모던 라이트 배경 세팅 */
-    body {
+    /* 기본 리셋 및 모던 라이트 배경 */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa; /* 은은하고 깨끗한 모던 라이트 그레이 */
-      color: #212529;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f5f7;
+      color: #111111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* 3번: 배경 은은한 QRI SOUND 워터마크 아트 */
+    .bg-watermark {
+      position: fixed;
+      top: 15vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18vw;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.03); /* 눈이 편안한 아주 은은한 워터마크 */
+      letter-spacing: -2px;
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+      line-height: 0.8;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* 상단 영역 컨테이너 */
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 24px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #111;
+    }
+
+    .logo span {
+      color: #ff3b30;
+    }
+
+    .sub-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #8e8e93;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
 
-  <!-- 이곳에 카드가 하나씩 차근차근 들어갈 예정입니다 -->
+  <!-- 배경 워터마크 그래픽 아트 -->
+  <div class="bg-watermark">
+    QRI<br>SOUND
+  </div>
+
+  <!-- 메인 화면 컨테이너 -->
+  <div class="container">
+    <header>
+      <div class="logo">QRI<span>.</span>SOUND</div>
+      <div class="sub-tag">LIVE HUB</div>
+    </header>
+  </div>
 
 </body>
 </html>
