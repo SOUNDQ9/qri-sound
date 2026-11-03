@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Singer 1 - Profile</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#fff; color:#333; }
+    header { background:#f9f9f9; padding:20px; border-bottom:1px solid #ddd; }
+    nav a { margin:0 15px; text-decoration:none; color:#333; font-weight:bold; }
+    .hero { height:300px; background:linear-gradient(to right, #a1c4fd, #c2e9fb);
+            display:flex; align-items:center; justify-content:center; flex-direction:column; }
+    .hero h1 { font-size:36px; margin:0; }
+    .hero p { font-size:18px; }
+    .section { padding:40px; }
+    .albums, .videos { display:flex; gap:20px; flex-wrap:wrap; }
+    .card { background:#f9f9f9; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+            width:200px; padding:20px; text-align:center; transition:transform 0.3s; }
+    .card:hover { transform:scale(1.05); }
+    footer { background:#f9f9f9; padding:20px; border-top:1px solid #ddd; text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="albums.html">Albums</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>AI Singer 1</h1>
+    <p>City Pop Specialist</p>
+  </div>
+
+  <div class="section">
+    <h2>대표 앨범</h2>
+    <div class="albums">
+      <div class="card">
+        <h3>Neon Dreams</h3>
+        <p>2026 Release</p>
+        <a href="album_neondreams.html">앨범 상세보기</a>
+      </div>
+      <div class="card">
+        <h3>Skyline</h3>
+        <p>2025 Release</p>
+        <a href="album_skyline.html">앨범 상세보기</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>뮤직비디오</h2>
+    <div class="videos">
+      <div class="card">
+        <h3>Neon Dreams MV</h3>
+        <a href="video_neondreams.html">영상 보기</a>
+      </div>
+      <div class="card">
+        <h3>Skyline MV</h3>
+        <a href="video_skyline.html">영상 보기</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Music Label. All rights reserved.</p>
+  </footer>
+</body>
+</html>
